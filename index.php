@@ -1,6 +1,14 @@
 <?php require_once("header.php"); ?>
 <h1> My website </h1>
 
+function MyFunction() {
+	echo "My name is Logan Manuel and I made this.";
+}
+
+
+
+MyFunction();
+
 <form action="handlepost.php" method="get">
 Name: <input type="text" name="name"><br>
 E-mail: <input type="text" name="email"><br>
