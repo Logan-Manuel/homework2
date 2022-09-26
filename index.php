@@ -1,6 +1,7 @@
 <?php require_once("header.php"); ?>
 <h1> My website </h1>
 
+<?php
 function MyFunction() {
 	echo "My name is Logan Manuel and I made this.";
 }
