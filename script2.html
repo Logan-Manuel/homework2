@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function myFunction() {
+            alert("I am an alert box!");
+        }
+        function myFunction1() {
+            confirm("Press 'OK' to continue.");
+        }
+        function myFunction2() {
+            var person = prompt("Please enter your name", "Harry Potter");
+            if (person != null) {
+                document.getElementById("demo").innerHTML = "Hello " + person + "! How are you today?";
+            }
+        }
+        function myFunction3() {
+            let number = prompt("Please enter a number", "1");
+            if (number != null) {
+                document.getElementById("demo1").innerHTML = Math.random() * number;
+            }
+        }
+        function myFunction4() {
+            document.getElementById("demo2").innerHTML = Math.PI;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>JavaScript Functions</h2>
+
+    <p><button onclick="myFunction()">Function 1: Alert Box</button></p>
+
+    <p><button onclick="myFunction1()">Function 2: Confirm</button></p>
+
+    <p id="demo"></p>
+
+    <p><button onclick="myFunction2()">Function 3: Hello Person</button></p>
+
+    <p id="demo1"></p>
+
+    <p><button onclick="myFunction3()">Function 4: Math.random()</button></p>
+
+    <p id="demo2"></p>
+
+    <p><button onclick="myFunction4()">Function 5: Math.PI</button></p>
+
+</body>
+
+</html>
