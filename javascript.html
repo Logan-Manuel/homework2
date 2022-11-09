@@ -24,13 +24,11 @@
       
       
  
-
- 
-
-
-
-
-      
+function greet() {
+	var name = prompt("Enter a name: ");
+    let greeting = ("Hello " + name + ":)");
+	alert(greeting)
+}
       
       
       function factorial(n) {
@@ -44,9 +42,9 @@
 
     <button onclick="factorial(5)"> Factorial</button>
 
-    <p><button onclick="Alerts()">Alerts</button></p>
+    <button onclick="Alerts()">Alerts</button>
     
- 
+ <button onclick="greet()">Greet name function</button>
     
   </body>
 </html>
